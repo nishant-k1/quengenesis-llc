@@ -1,0 +1,164 @@
+ul {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-secondary {
+  background-color: #45596F;
+  padding: 4rem 0;
+}
+
+.footer-secondary .container {
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-secondary .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    row-gap: 1rem;
+  }
+}
+
+.footer-secondary .container .logo-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-secondary .container .logo-box .logo {
+  height: 6rem;
+  max-width: 18rem;
+}
+
+.footer-secondary .container .text-box-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-secondary .container .text-box-1 h2 {
+  font-size: larger;
+}
+
+.footer-secondary .container .text-box-1 ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  row-gap: .5rem;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.footer-secondary .container .text-box-1 ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer-secondary .container .text-box-1 ul li a {
+  color: white;
+}
+
+.footer-secondary .container .text-box-1 ul li a:hover {
+  color: #EF648A;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer-secondary .container .text-box-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  row-gap: 1rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-secondary .container .text-box-2 h2 {
+  font-size: larger;
+}
+
+.footer-secondary .container .text-box-2 a {
+  color: white;
+}
+
+.footer-secondary .container .text-box-2 a:hover {
+  color: #EF648A;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer-primary {
+  padding: .5rem 0;
+  background-color: #e6e3e3;
+}
+
+.footer-primary .container {
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  padding: 1.5rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #454545;
+}
+
+.footer-primary .container p {
+  font-size: small;
+}
+/*# sourceMappingURL=Footer.css.map */

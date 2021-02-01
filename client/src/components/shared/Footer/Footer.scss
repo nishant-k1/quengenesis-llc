@@ -1,0 +1,107 @@
+@mixin container {
+    max-width:1200px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+
+ul{
+    list-style-type: none;
+    li{
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.footer-secondary{
+    background-color: #45596F;
+    padding: 4rem 0;
+    .container{
+        @include container; 
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        align-items: top;
+        color: white;
+        @media screen and (max-width:768px) {
+            justify-content: center;
+            grid-template-columns: auto;
+            row-gap: 1rem;
+        }
+        .logo-box{
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            .logo{
+                height: 6rem;
+                max-width: 18rem;
+            }
+        }
+        .text-box-1{
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 1rem;
+            justify-content: center;
+            h2{
+                font-size: larger;
+            }
+            ul{
+                display: grid;
+                grid-template-rows: auto auto auto auto;
+                row-gap: .5rem;
+                align-items: top;
+                justify-content: left;
+                li{
+                    display: grid;
+                    grid-template-columns: auto;
+                    align-items: top;
+                    justify-content: left;
+                    transition: .3s;
+                    a{
+                        color: white;
+                        &:hover{
+                            color: #EF648A;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+        .text-box-2{
+            h2{
+                font-size: larger;
+            }
+            display: grid;
+            grid-template-rows: auto auto auto;
+            row-gap: 1rem;
+            align-items: start;
+            justify-content: space-between;
+            a{
+                color: white;
+                &:hover{
+                    color: #EF648A;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+
+}
+
+.footer-primary{
+    padding: .5rem 0;
+    background-color: rgb(230, 227, 227);
+    .container{
+        @include container;
+        display: grid;
+        padding: 1.5rem 0;
+        align-items: center;
+        justify-content: center;
+        color: rgb(69, 69, 69);
+        p{
+            font-size: small;
+        }
+    }
+}
