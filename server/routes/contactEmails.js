@@ -19,7 +19,7 @@ router.route('/')
         let info = transporter.sendMail({
             from: process.env.EMAIL_ID, // sender address
             to: process.env.EMAIL_ID, // list of receivers
-            subject: "Renta_Porta: Contact Message", // Subject line
+            subject: "Quenegenesis: contact web page message", // Subject line
             text: `
                 From: ${emailData.fName} ${emailData.lName}
                 Email: ${emailData.email}

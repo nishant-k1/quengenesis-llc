@@ -84,10 +84,7 @@ const Contact = () => {
         .then(result => setMessage(result.data))
         .catch(err => console.log(err));
     }
-    const handleCancel=(e)=>{
-        e.preventDefault();
-        setpostData({fName:"", lName:"", email:"", phone:"", message:""});
-    }
+
     return(
         <>
             <form onSubmit={handleSubmit} className="contact-form">
@@ -117,9 +114,7 @@ const Contact = () => {
                             <label className='contact-label'>Phone</label>
                             <input className="contact-input" type="tel" placeholder='1-123-456-7890' maxlength='20' name="phone" onChange={handleChange} value={postData.phone} required/>
                         </div>
-                        
                     </div>
-
                     <div className="right-section">
                         <div className="your-message">
                             <label className='contact-label'>Message</label>
