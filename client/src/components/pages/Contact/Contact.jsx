@@ -115,7 +115,7 @@ const Contact = () => {
                     
                         <div className="contact-sub-row">
                             <label className='contact-label'>Phone</label>
-                            <input className="contact-input" type="tel" placeholder='1-123-456-7890' maxlength='14' name="phone" onChange={handleChange} value={postData.phone} required/>
+                            <input className="contact-input" type="tel" placeholder='1-123-456-7890' maxlength='20' name="phone" onChange={handleChange} value={postData.phone} required/>
                         </div>
                         
                     </div>
