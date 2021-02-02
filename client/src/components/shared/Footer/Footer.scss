@@ -41,7 +41,7 @@ ul{
         }
         .text-box-1{
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: auto;
             row-gap: 1rem;
             justify-content: center;
             h2{
@@ -53,6 +53,9 @@ ul{
                 row-gap: .5rem;
                 align-items: top;
                 justify-content: left;
+                @media screen and (max-width:768px) {
+                    justify-content: center;
+                }
                 li{
                     display: grid;
                     grid-template-columns: auto;
@@ -78,6 +81,9 @@ ul{
             row-gap: 1rem;
             align-items: start;
             justify-content: space-between;
+            @media screen and (max-width:768px) {
+                justify-content: center;
+            }
             a{
                 color: white;
                 &:hover{
@@ -96,11 +102,11 @@ ul{
     .container{
         @include container;
         display: grid;
-        padding: 1.5rem 0;
         align-items: center;
         justify-content: center;
         color: rgb(69, 69, 69);
         p{
+            padding: 1.5rem 0;
             font-size: small;
         }
     }

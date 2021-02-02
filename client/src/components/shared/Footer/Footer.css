@@ -58,8 +58,8 @@ ul li a {
 .footer-secondary .container .text-box-1 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
   row-gap: 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -82,6 +82,14 @@ ul li a {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-secondary .container .text-box-1 ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer-secondary .container .text-box-1 ul li {
@@ -127,6 +135,14 @@ ul li a {
   font-size: larger;
 }
 
+@media screen and (max-width: 768px) {
+  .footer-secondary .container .text-box-2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer-secondary .container .text-box-2 a {
   color: white;
 }
@@ -148,7 +164,6 @@ ul li a {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  padding: 1.5rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -159,6 +174,7 @@ ul li a {
 }
 
 .footer-primary .container p {
+  padding: 1.5rem 0;
   font-size: small;
 }
 /*# sourceMappingURL=Footer.css.map */
