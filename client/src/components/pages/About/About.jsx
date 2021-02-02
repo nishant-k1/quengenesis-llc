@@ -17,6 +17,7 @@ const Section2=(props)=>{
         <div className="section2" >
             <div className="container" >
                     <div className="text-box">
+                        <h1>{props.h1}</h1>
                         <p>{props.p1}</p>
                     </div>
                 <div className="img-box" >
@@ -35,6 +36,7 @@ const Section3=(props)=>{
                     <img className='sec-3-img' src={props.img1} alt="img" />
                 </div>
                 <div className="text-box">
+                    <h1>{props.h1}</h1>
                     <p>{props.p1}</p>
                 </div>
 

@@ -13,7 +13,7 @@
         display: grid;
         align-items: center;
         justify-content: space-between;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         column-gap: 8rem;
         @media only screen and (max-width:768px){
             grid-template-columns: auto;
@@ -66,7 +66,7 @@
             grid-template-rows: auto auto;
             row-gap: 2rem;
             h1{
-                color: rgba(0, 0, 0, 0.801);
+                color: rgba(0, 0, 0, 0.603);
             }
             p{
                 color: rgba(0, 0, 0, 0.897);

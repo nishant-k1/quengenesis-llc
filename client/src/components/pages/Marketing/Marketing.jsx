@@ -7,7 +7,7 @@ const Section1=(props)=>{
         <div className="marketing-section-1">
             <div className="container">
                 <div className="section-1-text-showcase">
-                    {/* <h1>{props.h1}</h1> */}
+                    <h1>{props.h1}</h1>
                     <p>{props.p1}</p>
                 </div>
                 <div className="section-1-img-showcase">
@@ -26,7 +26,7 @@ const Section2=(props)=>{
                     <img style={{maxHeight:'250px', maxWidth:'250px'}} src={props.img1} alt="img"/>
                 </div>
                 <div className="section-2-text-showcase">
-                    {/* <h1>{props.h1}</h1> */}
+                    <h1>{props.h1}</h1>
                     <p>{props.p1}</p>
                 </div>
             </div>
