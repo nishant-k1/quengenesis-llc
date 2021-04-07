@@ -143,11 +143,7 @@
 }
 
 
-
-
 // sidebar
-
-
 
 .side-menu-active{
     @media screen and (min-width:768px) {
@@ -190,7 +186,7 @@
         display: grid;
         align-content: center;
         justify-content: center;
-      .brand-logo-sidebar{
+    .brand-logo-sidebar{
         align-self: center;
         max-width: 100%;
         max-height: 100%;

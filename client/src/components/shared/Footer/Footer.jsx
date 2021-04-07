@@ -29,7 +29,7 @@ const FooterSecondary = () => {
                         8 The Green STE R<br/>
                         Dover, DE 19901<br/>
                         USA<br/><br/>
-                        <a href='tel: 424-255-5395'>Ph: 424-255-5395</a>
+                        <a href='tel: 855-780-3061'>Ph: 855-780-3061</a>
                     </address>
                 </div>
             </div>

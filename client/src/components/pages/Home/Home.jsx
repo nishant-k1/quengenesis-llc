@@ -102,7 +102,7 @@ const Section5=(props)=>{
         <>
             <div className='section-5'>
                 <div className='container'>
-                    <h2>We can transform your future</h2>
+                    <h2>A technology-first approach to transform business solutions</h2>
                     <Link className='contact-btn' type='button' to='/contact'>Get in touch</Link>
                 </div>
             </div>

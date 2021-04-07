@@ -8,7 +8,6 @@ import {GiHamburgerMenu} from 'react-icons/gi';
 import { useEffect, useRef } from 'react';
 
 const Header = () => {
-
     const sidebarRef=useRef();
     const [sidebarActive, setSidebarActive]=useState(false);
 
