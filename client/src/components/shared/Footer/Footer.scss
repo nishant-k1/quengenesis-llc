@@ -21,9 +21,9 @@ ul{
     .container{
         @include container; 
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto auto auto;
         justify-content: space-between;
-        align-items: top;
+        align-items: start;
         color: white;
         @media screen and (max-width:768px) {
             justify-content: center;
@@ -39,11 +39,46 @@ ul{
                 max-width: 18rem;
             }
         }
+        .social-box{
+            display: grid;
+            grid-template-columns: auto;
+            row-gap: 1rem;
+            justify-content: center;
+            align-items: start;
+            h2{
+                font-size: larger;
+            }
+            ul{
+                display: grid;
+                grid-template-rows: auto auto auto;
+                row-gap: .5rem;
+                align-items: top;
+                justify-content: left;
+                @media screen and (max-width:768px) {
+                    justify-content: center;
+                }
+                li{
+                    display: grid;
+                    grid-template-columns: auto;
+                    align-items: top;
+                    justify-content: left;
+                    transition: .3s;
+                    a{
+                        color: white;
+                        &:hover{
+                            color: #EF648A;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
         .text-box-1{
             display: grid;
             grid-template-columns: auto;
             row-gap: 1rem;
             justify-content: center;
+            align-items: start;
             h2{
                 font-size: larger;
             }

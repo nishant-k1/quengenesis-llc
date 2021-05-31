@@ -20,6 +20,7 @@
     "history": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-facebook-pixel": "^1.0.4",
     "react-ga": "^3.2.0",
     "react-icons": "^3.11.0",
     "react-input-mask": "^2.0.4",
@@ -50,6 +51,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {}
+  }
 }

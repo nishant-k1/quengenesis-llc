@@ -30,13 +30,13 @@ const section2Data={
         {
             img: section2Img1,
             title: 'Quality Assurance',
-            desc: 'We follow a systematic way of creating an environment to assure that the services being offered meets the quality requirements.',
+            desc: 'We follow a systematic way of creating an environment to assure that the services being offered meet the quality requirements.',
         },
 
         {
             img: section2Img2,
             title: 'Cutting-edge solutions',
-            desc: "We take tiime to understand your work practices and the nature of your business to create a custom solution which would turn to be an efficnet soltoutin to your requirements",
+            desc: "We take time to understand your work practices and the nature of your business to create a custom solution which would turn to be an efficient solution to your requirements.",
         },
 
         {

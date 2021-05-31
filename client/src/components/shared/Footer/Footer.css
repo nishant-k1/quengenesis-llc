@@ -18,14 +18,14 @@ ul li a {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   color: white;
 }
 
@@ -55,6 +55,71 @@ ul li a {
   max-width: 18rem;
 }
 
+.footer-secondary .container .social-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  row-gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.footer-secondary .container .social-box h2 {
+  font-size: larger;
+}
+
+.footer-secondary .container .social-box ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  row-gap: .5rem;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-secondary .container .social-box ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.footer-secondary .container .social-box ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer-secondary .container .social-box ul li a {
+  color: white;
+}
+
+.footer-secondary .container .social-box ul li a:hover {
+  color: #EF648A;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 .footer-secondary .container .text-box-1 {
   display: -ms-grid;
   display: grid;
@@ -64,6 +129,9 @@ ul li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .footer-secondary .container .text-box-1 h2 {

@@ -13,6 +13,14 @@ const FooterSecondary = () => {
                 <div className='logo-box'> 
                     <Link to='/'><img className='logo' src="logoWhite.svg" alt='logo'/></Link>
                 </div>
+                <div className='social-box'>
+                    <h2>Social Links</h2>
+                    <ul>
+                        <li><a href='https://www.linkedin.com/company/quengenesis'>-LinkedIn</a></li>
+                        <li><a href='https://www.facebook.com/quengenesis'>-Facebook</a></li>
+                        <li><a href='https://www.instagram.com/quengenesis.io/'>-Instagram</a></li>
+                    </ul>
+                </div>
                 <div className='text-box-1'>
                     <h2>Quick Links</h2>
                     <ul>

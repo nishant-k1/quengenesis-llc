@@ -1,6 +1,7 @@
 import "./Contact.css";
 import React, {useState} from 'react';
 import axios from "axios";
+import ReactPixel from 'react-facebook-pixel';
 
 const Contact = () => {
     const[message, setMessage]=useState('');
@@ -25,7 +26,6 @@ const Contact = () => {
                         phone:initialValue.phone, 
                         message:initialValue.message,
                     });
-                    break;
 
                 case "lName":
                     return({
@@ -35,7 +35,6 @@ const Contact = () => {
                         phone:initialValue.phone, 
                         message:initialValue.message,
                     });
-                    break;
 
                 case "email":
                     return({
@@ -45,7 +44,6 @@ const Contact = () => {
                         phone:initialValue.phone, 
                         message:initialValue.message,
                     });
-                    break;
 
                 case "phone":
                     return({
@@ -55,7 +53,6 @@ const Contact = () => {
                         phone:value, 
                         message:initialValue.message,
                     });
-                    break;
                     
                 case "message":
                     return({
@@ -65,7 +62,6 @@ const Contact = () => {
                         phone:initialValue.phone, 
                         message:value,
                     });
-                    break;
                     
                 default:
                     // do nothing
@@ -83,6 +79,7 @@ const Contact = () => {
         })
         .then(result => setMessage(result.data))
         .catch(err => console.log(err));
+        ReactPixel.trackSingleCustom('1399959230371123'); // For tracking custom events.
     }
 
     return(
