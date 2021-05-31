@@ -22,10 +22,10 @@ const options = {
 
 function App() {
   useEffect(()=>{
-    ReactPixel.init('1399959230371123', advancedMatching, options);
+    ReactPixel.init('process.env.FACEBOOK_PIXEL_ID', advancedMatching, options);
     ReactPixel.pageView();
 
-    ReactGA.initialize('UA-181579330-1');
+    ReactGA.initialize('process.env.GOOLGE_TRACKING_ID');
     ReactGA.pageview(window.location.pathname + window.location.search);
   });
 

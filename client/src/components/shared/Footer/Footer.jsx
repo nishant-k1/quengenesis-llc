@@ -1,7 +1,6 @@
 import './Footer.css';
 import React from 'react';
 import {Link } from "react-router-dom";
-import {AiFillFacebook, AiFillTwitterSquare, AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
 
 var date=new Date();
 var year=date.getFullYear();
@@ -25,9 +24,10 @@ const FooterSecondary = () => {
                     <h2>Quick Links</h2>
                     <ul>
                         <li><Link to='/'>-Home</Link></li>
-                        <li><Link to='/contact'>-About</Link></li>
-                        <li><Link to='/products'>-Services</Link></li>
-                        <li><Link to='/quote'>-Contact</Link></li>
+                        <li><Link to='/about'>-About</Link></li>
+                        <li><Link to='/sales-and-marketing-consulting'>-Consulting</Link></li>
+                        <li><Link to='/technology-and-it-services'>-Web & Software Services</Link></li>
+                        <li><Link to='/contact'>-Contact</Link></li>
                     </ul>
                 </div>
 
