@@ -26,7 +26,7 @@ function App() {
     ReactPixel.init('804426716871878', advancedMatching, options);
     ReactPixel.pageView();
 
-    ReactGA.initialize('UA-181579330-1');
+    ReactGA.initialize('G-ZZFNFGZQTK');
     ReactGA.pageview(window.location.pathname + window.location.search);
   });
 
