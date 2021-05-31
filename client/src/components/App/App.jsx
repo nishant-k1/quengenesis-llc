@@ -12,6 +12,7 @@ import Contact from '../pages/Contact/Contact';
 import Payment from '../pages/Payment/Payment';
 import Footer from '../shared/Footer/Footer';
 import ReactGA from 'react-ga';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 const advancedMatching = { em: 'info@quengenesis.io' }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
 const options = {
@@ -22,10 +23,10 @@ const options = {
 
 function App() {
   useEffect(()=>{
-    ReactPixel.init('process.env.FACEBOOK_PIXEL_ID', advancedMatching, options);
+    ReactPixel.init('804426716871878', advancedMatching, options);
     ReactPixel.pageView();
 
-    ReactGA.initialize('process.env.GOOLGE_TRACKING_ID');
+    ReactGA.initialize('UA-181579330-1');
     ReactGA.pageview(window.location.pathname + window.location.search);
   });
 
@@ -42,6 +43,9 @@ function App() {
         <Route path='/payment' component={Payment} />
       </Switch>
       <Footer />
+      <MessengerCustomerChat
+        pageId="107997134827152"
+      />
     </>
   );
 }

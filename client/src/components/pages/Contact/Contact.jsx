@@ -2,6 +2,7 @@ import "./Contact.css";
 import React, {useState} from 'react';
 import axios from "axios";
 import ReactPixel from 'react-facebook-pixel';
+import ReactGA from 'react-ga';
 
 const Contact = () => {
     const[message, setMessage]=useState('');
@@ -80,6 +81,11 @@ const Contact = () => {
         .then(result => setMessage(result.data))
         .catch(err => console.log(err));
         ReactPixel.trackSingleCustom('1399959230371123'); // For tracking custom events.
+        ReactGA.event({
+            category: 'Contact',
+            action: 'Contact Form Submitted',
+            label: 'CFS'
+        })
     }
 
     return(
