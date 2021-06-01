@@ -1,6 +1,6 @@
 import './Footer.css';
 import React from 'react';
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ReactGA from 'react-ga';
 
 var date=new Date();
@@ -42,21 +42,27 @@ const FooterSecondary = () => {
                     <div className="phone-box">
                     USA <a 
                     onClick={
-                        ReactGA.event({
-                            category: 'Call',
-                            action: 'US Phone Call',
-                            label: 'CFS'
-                        })
+                        () => {
+                            ReactGA.event({
+                                category: 'Call',
+                                action: 'US Phone Call',
+                                label: 'CFS'
+                            })
+                        }
                     } 
-                    href='tel: +1855-780-3061'>+1 (855)-780-3061</a>
+                    href='tel: +1855-780-3061'
+                    >
+                    +1 (855)-780-3061</a>
 
                     India <a 
                     onClick={
-                        ReactGA.event({
-                            category: 'Call',
-                            action: 'India Phone Call',
-                            label: 'CFS'
-                        })
+                        () => {
+                            ReactGA.event({
+                                category: 'Call',
+                                action: 'India Phone Call',
+                                label: 'CFS'
+                            })
+                        }
                     } 
                     href='tel: 870-951-6148'>+91 8709516148</a>
                 </div>
