@@ -20,7 +20,6 @@ const options = {
   debug: false, // enable logs
 };
 
-
 function App() {
   useEffect(()=>{
     ReactPixel.init('804426716871878', advancedMatching, options);
