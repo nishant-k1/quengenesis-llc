@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd client && npm run build && cd .. && cd api && npm start ./bin/wwww"
+    "build": "cd ./client && npm ci && npm run build",
+    "start": "cd ./api && npm ci && npm start ./bin/www"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nishant-k-290195/quengenesis.git"
   },
-  "author": "Nishant Kumar",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nishant-k-290195/quengenesis/issues"
