@@ -46,7 +46,7 @@ const FooterSecondary = () => {
                             ReactGA.event({
                                 category: 'Call',
                                 action: 'US Phone Call',
-                                label: 'CFS'
+                                label: 'UPC'
                             })
                         }
                     } 
@@ -60,7 +60,7 @@ const FooterSecondary = () => {
                             ReactGA.event({
                                 category: 'Call',
                                 action: 'India Phone Call',
-                                label: 'CFS'
+                                label: 'IPC'
                             })
                         }
                     } 
