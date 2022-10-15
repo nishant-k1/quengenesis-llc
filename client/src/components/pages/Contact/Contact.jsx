@@ -73,7 +73,7 @@ const Contact = () => {
     setpostData({ fName: "", lName: "", email: "", phone: "", message: "" });
     axios({
       method: "post",
-      url: "http://quengenesisllc.com/contactEmails",
+      url: "https://quengenesisllc.com/contactEmails",
       data: postData,
     })
       .then((result) => setMessage(result.data))
