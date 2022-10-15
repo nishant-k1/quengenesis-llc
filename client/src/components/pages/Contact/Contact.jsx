@@ -73,6 +73,9 @@ const Contact = () => {
     setpostData({ fName: "", lName: "", email: "", phone: "", message: "" });
     axios({
       method: "post",
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
       url: "https://quengenesisllc.com/contactEmails",
       data: postData,
     })
