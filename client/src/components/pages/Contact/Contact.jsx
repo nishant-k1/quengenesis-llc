@@ -74,7 +74,10 @@ const Contact = () => {
     axios({
       method: "post",
       headers: {
-        "Access-Control-Allow-Origin": "https://www.quengenesisllc.com",
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,OPTIONS",
+        "Access-Control-Allow-Credentials": "true",
       },
       url: "https://quengenesisllc.com/contactEmails",
       data: postData,
