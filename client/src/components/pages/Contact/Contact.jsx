@@ -76,11 +76,13 @@ const Contact = () => {
       headers: {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,OPTIONS",
+        "Access-Control-Allow-Method": "POST",
         "Access-Control-Allow-Credentials": "true",
       },
       url: "https://quengenesisllc.com/contactEmails",
       data: postData,
+      mode: "CORS",
+      credentials: "include",
     })
       .then((result) => setMessage(result.data))
       .catch((err) => console.log(err));
