@@ -129,7 +129,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
         <div className="submit-message">
           <h1>{message}</h1>
         </div>
