@@ -23,7 +23,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMessage(result.data);
+    setMessage('Your message has been delivered');
     axios({
       method: "post",
       headers: {
