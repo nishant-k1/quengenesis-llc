@@ -15,62 +15,15 @@ const Contact = () => {
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setpostData((initialValue) => {
-      switch (name) {
-        case "fName":
-          return {
-            fName: value,
-            lName: initialValue.lName,
-            email: initialValue.email,
-            phone: initialValue.phone,
-            message: initialValue.message,
-          };
-
-        case "lName":
-          return {
-            fName: initialValue.fName,
-            lName: value,
-            email: initialValue.email,
-            phone: initialValue.phone,
-            message: initialValue.message,
-          };
-
-        case "email":
-          return {
-            fName: initialValue.fName,
-            lName: initialValue.lName,
-            email: value,
-            phone: initialValue.phone,
-            message: initialValue.message,
-          };
-
-        case "phone":
-          return {
-            fName: initialValue.fName,
-            lName: initialValue.lName,
-            email: initialValue.email,
-            phone: value,
-            message: initialValue.message,
-          };
-
-        case "message":
-          return {
-            fName: initialValue.fName,
-            lName: initialValue.lName,
-            email: initialValue.email,
-            phone: initialValue.phone,
-            message: value,
-          };
-
-        default:
-        // do nothing
-      }
-    });
+    setpostData((initialValue) => ({
+      ...initialValue,
+      [name]:value,
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setpostData({ fName: "", lName: "", email: "", phone: "", message: "" });
+    setMessage(result.data);
     axios({
       method: "post",
       headers: {
@@ -79,8 +32,18 @@ const Contact = () => {
       url: "/contactEmails",
       data: postData,
     })
-      .then((result) => setMessage(result.data))
+      .then((result) => {
+
+      })
       .catch((err) => console.log(err));
+
+    setpostData({
+      fName: "",
+      lName: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
     ReactPixel.trackSingleCustom("1399959230371123"); // For tracking custom events.
     ReactGA.event({
       category: "Contact",
