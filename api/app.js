@@ -5,10 +5,8 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const bodyParser = require("body-parser");
 var cors = require("cors");
-const { urlencoded } = require("express");
 require("dotenv").config();
-var contactEmails = require("./routes/contactEmails");
-var payments = require("./routes/payments");
+var contact = require("./routes/contact");
 var app = express();
 
 app.use(logger("dev"));
@@ -19,7 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static("../client/build"));
 app.use(cors({ origin: "*", credentials: true }));
-app.use("/contact", contactEmails);
+app.use("/contact", contact);
 
 app.get("*", (req, res) => {
   res.sendFile(path.resolve("..", "client", "build", "index.html"));
