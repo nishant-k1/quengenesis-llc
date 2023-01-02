@@ -20,7 +20,7 @@ router
     let info = transporter.sendMail({
       from: process.env.EMAIL_ID, // sender address
       to: process.env.EMAIL_ID, // list of receivers
-      subject: "Quengenesis: Web MSessage", // Subject line
+      subject: "Quengenesis: web email", // Subject line
       text: `
                 From: ${emailData.fName} ${emailData.lName}
                 Email: ${emailData.email}
