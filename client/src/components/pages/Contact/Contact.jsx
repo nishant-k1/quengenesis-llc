@@ -30,7 +30,7 @@ const Contact = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      url: `${baseUrl}/api/contact`,
+      url: `${baseUrl}/contact`,
       data: postData,
     })
       .then((result) => {
