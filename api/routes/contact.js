@@ -22,10 +22,10 @@ router
       to: process.env.EMAIL_ID, // list of receivers
       subject: "Quengenesis: web email", // Subject line
       text: `
-                From: ${emailData.fName} ${emailData.lName}
-                Email: ${emailData.email}
-                Phone: ${emailData.phone}
-                Message: ${emailData.message}`, // plain text body
+        From: ${emailData.fName} ${emailData.lName}
+        Email: ${emailData.email}
+        Phone: ${emailData.phone}
+        Message: ${emailData.message}`, // plain text body
       // html: "<b>Hello world?</b>", // html body
     });
 
@@ -34,12 +34,10 @@ router
     // verify connection configuration
     transporter.verify(function (err, success) {
       if (err) {
-        console.log(err);
         res.send(
           "There is a problem in the server, please try again later " + err
         );
       } else {
-        console.log(err)
         res.send("Your message was sent successfully.");
       }
     });
