@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import ReactPixel from "react-facebook-pixel";
 import ReactGA from "react-ga";
+import {baseUrl} from '../../../lib';
 
 const Contact = () => {
   const [message, setMessage] = useState("");
@@ -25,11 +26,11 @@ const Contact = () => {
     e.preventDefault();
     setMessage('Your message has been delivered');
     axios({
-      method: "post",
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      url: "/contactEmails",
+      url: `${baseUrl}/contact`,
       data: postData,
     })
       .then((result) => {
