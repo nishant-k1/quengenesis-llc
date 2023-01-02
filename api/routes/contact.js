@@ -6,7 +6,6 @@ router
   .route("/")
   .post((req, res) => {
     const emailData = req.body;
-    res.send(emailData);
     let transporter = nodemailer.createTransport({
       host: "smtp.zoho.in",
       port: 465,
@@ -21,7 +20,7 @@ router
     let info = transporter.sendMail({
       from: process.env.EMAIL_ID, // sender address
       to: process.env.EMAIL_ID, // list of receivers
-      subject: "Quengenesis: web message", // Subject line
+      subject: "Quengenesis: Web MSessage", // Subject line
       text: `
                 From: ${emailData.fName} ${emailData.lName}
                 Email: ${emailData.email}
@@ -35,14 +34,15 @@ router
     // verify connection configuration
     transporter.verify(function (err, success) {
       if (err) {
+        console.log(err);
         res.send(
           "There is a problem in the server, please try again later " + err
         );
       } else {
+        console.log(err)
         res.send("Your message was sent successfully.");
       }
     });
   })
-  .get((req, res) => res.send('Web email API'));
 
 module.exports = router;
