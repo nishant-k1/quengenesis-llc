@@ -19,11 +19,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static("../client/build"));
 app.use(cors({ origin: "*", credentials: true }));
-app.use("/contactEmails", contactEmails);
-app.use("/payments", payments);
+app.use("/contact", contactEmails);
 
 app.get("*", (req, res) => {
   res.sendFile(path.resolve("..", "client", "build", "index.html"));
+  res.send('Welcome to quengensis API')
 });
 
 // catch 404 and forward to error handler
