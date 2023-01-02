@@ -17,9 +17,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static("../client/build"));
 app.use(cors({ origin: "*", credentials: true }));
-app.use("/api/contact", contact);
+app.use("/contact", contact);
 
-app.get("/api", (req, res) => {
+app.get("/", (req, res) => {
   // res.sendFile(path.resolve("..", "client", "build", "index.html"));
   res.send('Welcome to quengensis API')
 });
