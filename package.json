@@ -94,8 +94,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd ./client && npm i && cd ../api && npm i",
-    "start": "cd ./client && npm run build && cd ../api && npm start"
+    "start": "cd ./client && npm i && npm run build && cd ../api && npm i && npm start"
   },
   "repository": {
     "type": "git",
