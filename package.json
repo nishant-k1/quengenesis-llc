@@ -2,7 +2,6 @@
   "name": "quengenesis-llc",
   "version": "1.0.0",
   "description": "",
-  "main": "./api/bin/www",
   "dependencies": {
     "ansi-regex": "^5.0.1",
     "ansi-styles": "^4.3.0",
@@ -95,8 +94,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd ./client && npm i && npm run build",
-    "start": "cd ./api && npm i && npm start"
+    "build": "cd ./client && npm i && cd ../api && npm i",
+    "start": "cd ./client && npm run build && cd ../api && npm start"
   },
   "repository": {
     "type": "git",
