@@ -1,1 +1,1 @@
-export const baseUrl = "https://www.api.quengenesisllc.com";
+export const baseUrl = "https://www.api.quengenesis.com";
