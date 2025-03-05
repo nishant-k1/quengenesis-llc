@@ -1,9 +1,8 @@
 import "./Contact.css";
 import React, { useState } from "react";
 import axios from "axios";
-import ReactPixel from "react-facebook-pixel";
 import ReactGA from "react-ga";
-import {baseUrl} from '../../../lib';
+import { baseUrl } from "../../../lib";
 
 const Contact = () => {
   const [message, setMessage] = useState("");
@@ -18,13 +17,13 @@ const Contact = () => {
     const { name, value } = e.target;
     setpostData((initialValue) => ({
       ...initialValue,
-      [name]:value,
+      [name]: value,
     }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMessage('Your message has been delivered');
+    setMessage("Your message has been delivered");
     axios({
       method: "POST",
       headers: {
@@ -33,9 +32,7 @@ const Contact = () => {
       url: `${baseUrl}/contact`,
       data: postData,
     })
-      .then((result) => {
-
-      })
+      .then((result) => {})
       .catch((err) => console.log(err));
 
     setpostData({
@@ -45,7 +42,6 @@ const Contact = () => {
       phone: "",
       message: "",
     });
-    ReactPixel.trackSingleCustom("1399959230371123"); // For tracking custom events.
     ReactGA.event({
       category: "Contact",
       action: "Contact Form Submitted",
